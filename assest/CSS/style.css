@@ -1,12 +1,11 @@
-@import url(/Portfolio/assest/CSS/base.css);
-
 body {
     /* background-image: linear-gradient(90deg, red, yellow); */
     background: linear-gradient(180deg, var(--color-two), var(--color-five));
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 300vh;
 }
 
+/* ----- Header ----- */
 #header {
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.6);
@@ -106,14 +105,64 @@ body {
     margin: 0;
 }
 
-.header-info {
-    /* margin: 0 auto; */
-}
-
 .header-info-title {
     text-transform: uppercase;
     margin: 0;
     letter-spacing: 2px;
     font-weight: 600;
     color: #777;
+}
+
+/* ----- Content ----- */
+
+#content {
+    margin: 40px;
+
+}
+
+.navigation {
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+}
+
+.item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    /* padding: 5px; */
+}
+
+.item.active {
+    background: linear-gradient(45deg, var(--color-three), var(--color-four));
+    color: var(--white-color);
+    font-weight: 500;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.extends {
+    background-color: rgba(255, 255, 255, 0.6);
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+
+}
+
+.extend-title {
+    position: relative;
+}
+
+.extend-title::before {
+    content: "";
+    position: absolute;
+    bottom: -16%;
+    left: 0;
+    width: 100px;
+    height: 5px;
+    background: linear-gradient(90deg, var(--color-two), var(--color-five));
+    border-radius: 5px;
+}
+
+.extend-content {
+    margin: 10px 0 0 0;
 }
