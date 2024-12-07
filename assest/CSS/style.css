@@ -1,0 +1,119 @@
+@import url(/Portfolio/assest/CSS/base.css);
+
+body {
+    /* background-image: linear-gradient(90deg, red, yellow); */
+    background: linear-gradient(180deg, var(--color-two), var(--color-five));
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+#header {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.6);
+    margin: 40px;
+    border-radius: 10px;
+}
+
+.header-intro {
+    margin: 14px 0 0 20px;
+}
+
+.header-socials {
+    margin-top: 50px;
+    position: relative;
+}
+
+.header-socials a {
+    text-decoration: none;
+    color: var(--black-color);
+    font-size: 24px;
+    margin-left: 10px;
+    padding: 5px;
+    transition: all .3s ease;
+}
+
+.header-socials .fb:hover {
+    background-color: blue;
+    border-radius: 5px;
+    color: var(--white-color);
+}
+
+.header-socials .git:hover {
+    background-color: var(--black-color);
+    border-radius: 5px;
+    color: var(--white-color);
+
+}
+
+.github {
+    position: absolute;
+    top: -106%;
+    left: 28%;
+    background-color: var(--black-color);
+    color: var(--white-color);
+    padding: 2px;
+    border-radius: 5px;
+
+}
+
+
+.facebook {
+    position: absolute;
+    top: -106%;
+    left: -4%;
+    background-color: blue;
+    color: var(--white-color);
+    padding: 2px;
+    border-radius: 5px;
+}
+
+.github,
+.facebook {
+    animation: modalFadeIn 0.3s ease;
+    display: none;
+}
+
+.facebook::before {
+    content: "";
+    position: absolute;
+    bottom: -16%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid blue;
+}
+
+.github::before {
+    content: "";
+    position: absolute;
+    bottom: -16%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid black;
+    /* margin-bottom: 10px; */
+}
+
+.github.open,
+.facebook.open {
+    display: block;
+}
+
+.github p,
+.facebook p {
+    margin: 0;
+}
+
+.header-info {
+    /* margin: 0 auto; */
+}
+
+.header-info-title {
+    text-transform: uppercase;
+    margin: 0;
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: #777;
+}

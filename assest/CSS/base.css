@@ -5,4 +5,19 @@
     --color-four: #A33757;
     --color-five: #852E4E;
     --color-six: #4C1D3D;
+    --black-color: #000;
+    --white-color: #fff;
+}
+
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
 }
