@@ -57,3 +57,31 @@ hoverElement.forEach(({ trigger, target }) => {
         toggleClass('mouseleave', targetElement, clOpen);
     });
 })
+
+const navItem = document.querySelectorAll(".item");
+const extendList = document.querySelectorAll('.extend')
+console.log(navItem, extendList)
+
+navItem.forEach(function (item, index) {
+    const pane = extendList[index];
+    // console.log(pane)
+    item.onclick = function () {
+        const itemActive = document.querySelector('.item.active');
+        const extendActive = document.querySelector('.extend.active');
+        itemActive.classList.remove('active');
+        extendActive.classList.remove('active');
+        this.classList.add('active');
+        pane.classList.add('active');
+        // console.log(this)
+    }
+})
+
+
+
+
+
+
+
+
+
+

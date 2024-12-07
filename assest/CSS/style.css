@@ -124,13 +124,23 @@ body {
     background-color: rgba(255, 255, 255, 0.6);
     border-radius: 10px;
     text-align: center;
-    padding: 20px;
+    padding: 30px;
 }
 
 .item {
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 10px;
+    transition: all 0.4s ease;
+
+    cursor: pointer;
     /* padding: 5px; */
+}
+
+.item:hover {
+    background: linear-gradient(45deg, var(--color-three), var(--color-four));
+    color: var(--white-color);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
 }
 
 .item.active {
@@ -144,8 +154,17 @@ body {
     background-color: rgba(255, 255, 255, 0.6);
     width: 100%;
     border-radius: 10px;
-    padding: 10px;
+    padding: 30px;
 
+}
+
+.extend {
+    /* position: relative; */
+    display: none;
+}
+
+.extend.active {
+    display: block;
 }
 
 .extend-title {
@@ -165,4 +184,24 @@ body {
 
 .extend-content {
     margin: 10px 0 0 0;
+}
+
+.extend-project {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.project-image {
+    width: 100%;
+    height: 220px;
+    transition: all 0.4s ease;
+}
+
+.project-image:hover {
+    transform: scale(1.05);
+
+}
+
+.name-project {
+    margin-top: 10px;
 }
