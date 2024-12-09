@@ -1,7 +1,9 @@
 body {
-    /* background-image: linear-gradient(90deg, red, yellow); */
-    background: linear-gradient(180deg, var(--color-two), var(--color-five));
+    background-image: url(/assest/image/bg.png);
+    /* background: linear-gradient(180deg, var(--color-two), var(--color-five)); */
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
     height: 300vh;
 }
 
@@ -158,6 +160,7 @@ body {
 
 }
 
+/* ----- extend introduce ----- */
 .extend {
     /* position: relative; */
     display: none;
@@ -204,4 +207,23 @@ body {
 
 .name-project {
     margin-top: 10px;
+}
+
+/* ----- extend interest ----- */
+.extend-interest {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    margin: 15px 0 20px 0;
+}
+
+.extend-interest-content,
+.extend-interest-img {
+    margin: 10px;
+}
+
+.extend-interest-img {
+    height: 120px;
+    width: 180px;
+
 }
