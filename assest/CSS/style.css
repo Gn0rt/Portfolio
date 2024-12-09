@@ -127,13 +127,15 @@ body {
     border-radius: 10px;
     text-align: center;
     padding: 30px;
+    /* transition: all 0.5s ease; */
+    width: 189px;
+
 }
 
 .item {
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 10px;
     transition: all 0.4s ease;
-
     cursor: pointer;
     /* padding: 5px; */
 }
@@ -210,6 +212,10 @@ body {
 }
 
 /* ----- extend interest ----- */
+.extend-title i {
+    color: var(--color-five);
+}
+
 .extend-interest {
     display: flex;
     background-color: rgba(255, 255, 255, 0.8);

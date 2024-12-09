@@ -60,6 +60,8 @@ hoverElement.forEach(({ trigger, target }) => {
 
 const navItem = document.querySelectorAll(".item");
 const extendList = document.querySelectorAll('.extend')
+const navigation = document.querySelector(".navigation");
+console.log(navigation)
 console.log(navItem, extendList)
 
 navItem.forEach(function (item, index) {
@@ -73,6 +75,17 @@ navItem.forEach(function (item, index) {
         this.classList.add('active');
         pane.classList.add('active');
         // console.log(this)
+    }
+})
+
+window.addEventListener('scroll', function () {
+    if (window.scrollY > 200) {
+        navigation.style.position = "fixed";
+        navigation.style.top = "0"
+
+    } else {
+        navigation.style.position = "relative";
+        navigation.style.top = "0"
     }
 })
 
