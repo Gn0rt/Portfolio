@@ -1,6 +1,6 @@
 body {
-    background-image: url(/assest/image/bg.png);
-    /* background: linear-gradient(180deg, var(--color-two), var(--color-five)); */
+    /* background-image: url(/assest/image/bg.png); */
+    background: linear-gradient(180deg, var(--color-two), var(--color-five));
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
