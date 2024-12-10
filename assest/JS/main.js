@@ -82,10 +82,13 @@ window.addEventListener('scroll', function () {
     if (window.scrollY > 200) {
         navigation.style.position = "fixed";
         navigation.style.top = "0"
+        navigation.style.width = "14%"
 
     } else {
         navigation.style.position = "relative";
         navigation.style.top = "0"
+        navigation.style.width = "100%"
+
     }
 })
 
