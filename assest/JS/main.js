@@ -78,19 +78,33 @@ navItem.forEach(function (item, index) {
     }
 })
 
-window.addEventListener('scroll', function () {
-    if (window.scrollY > 200) {
-        navigation.style.position = "fixed";
-        navigation.style.top = "0"
-        navigation.style.width = "14%"
+// window.addEventListener('scroll', function () {
+//     if (window.scrollY > 200) {
+//         navigation.style.position = "fixed";
+//         navigation.style.top = "0"
+//         navigation.style.width = "14%"
 
-    } else {
-        navigation.style.position = "relative";
-        navigation.style.top = "0"
-        navigation.style.width = "100%"
+//     } else {
+//         navigation.style.position = "relative";
+//         navigation.style.top = "0"
+//         navigation.style.width = "100%"
 
-    }
-})
+//     }
+// })
+// Kiểm tra nếu màn hình nhỏ hơn 739px
+if (window.matchMedia('(min-width: 740px)').matches) {
+    window.addEventListener('scroll', function () {
+        if (window.scrollY > 200) {
+            navigation.style.position = "fixed";
+            navigation.style.top = "0";
+            navigation.style.width = "14%";
+        } else {
+            navigation.style.position = "relative";
+            navigation.style.top = "0";
+            navigation.style.width = "100%";
+        }
+    });
+}
 
 
 

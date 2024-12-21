@@ -9,6 +9,10 @@
     --white-color: #fff;
 }
 
+.mg-0 {
+    margin: 0;
+}
+
 @keyframes modalFadeIn {
     from {
         opacity: 0;
